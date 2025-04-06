@@ -3,7 +3,7 @@ import os
 
 credencial = "GITHUB_TOKEN"
 variable_entorno = os.getenv(credencial)
-if credencial is not None:
+if variable_entorno is not None:
     print(variable_entorno)
     with open("salida.txt","w") as archivo:
         archivo.write(variable_entorno)
